@@ -10,8 +10,12 @@
   },
   "scripts": {
     "start": "node app.js",
+<<<<<<< HEAD
     "test": "mocha --recursive --exit",
     "sonar": "sonar-scanner"
+=======
+    "test": "nyc --reporter=html --reporter=text mocha --exit"
+>>>>>>> 50c2bae (added code and dockerfile)
   },
   "author": "riaan@entersekt.com",
   "description": "Basic to do list exercise",

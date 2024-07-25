@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="en">
     <head>
         <title>Todo List APP test</title>
@@ -85,16 +86,38 @@
             input[type="submit"]:hover {
                 background-color: #45a049;
             }
+=======
+
+<html>
+
+    <head>
+        <title>My todolist</title>
+        <style>
+            a {
+                text-decoration: none;
+                color: black;
+            }
+
+>>>>>>> 50c2bae (added code and dockerfile)
         </style>
     </head>
 
     <body>
+<<<<<<< HEAD
         <h1>Todo List - Made for Batch 6</h1>
         <ul>
             <% todolist.forEach(function(todo, index) { %>
             <li>
                 <a href="/todo/delete/<%= index %>" class="delete-btn">✘</a>
                 <a href="/todo/<%= index %>" class="edit-btn">✎</a>
+=======
+        <h1>My todolist</h1>
+        <ul>
+            <% todolist.forEach(function(todo, index) { %>
+            <li>
+                <a href="/todo/delete/<%= index %>">✘</a>
+                <a href="/todo/<%= index %>">✎</a>
+>>>>>>> 50c2bae (added code and dockerfile)
                 <%- todo %>
             </li>
             <% }); %>
@@ -102,10 +125,18 @@
 
         <form action="/todo/add/" method="post">
             <p>
+<<<<<<< HEAD
                 <label for="newtodo">What should I do?</label>
+=======
+                <label for="newtodo">What shoud I do?</label>
+>>>>>>> 50c2bae (added code and dockerfile)
                 <input type="text" name="newtodo" id="newtodo" autofocus />
                 <input type="submit" value="Add" />
             </p>
         </form>
     </body>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 50c2bae (added code and dockerfile)
 </html>

@@ -1,7 +1,9 @@
-version: '3.9'
-
+version: '3.8'
 services:
-  web:
-    image: "trainwithshubham/node-app-batch-6:latest"
+  node-app:
+    image: iamamash/node-app:latest
     ports:
-      - "8000:8000"
+      - "8000:8000"   # Map port 8000 of the container to port 8000 on the host
+
+    restart: always  # Automatically restart the container if it stops
+
