@@ -14,7 +14,7 @@ pipeline {
         stage("SonarQube Analysis"){
             steps{
                withSonarQubeEnv("sonar"){
-                   sh "$SONAR_HOME/bin/sonar-scanner -Dsonar.projectName=nodetodo -Dsonar.projectKey=nodetodo -X"
+                   sh "$SONAR_HOME/bin/sonar-scanner -X"
                    echo 'SonarQube analysis done'
                }
             }
