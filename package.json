@@ -11,11 +11,16 @@
   "scripts": {
     "start": "node app.js",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "test": "mocha --recursive --exit",
     "sonar": "sonar-scanner"
 =======
     "test": "nyc --reporter=html --reporter=text mocha --exit"
 >>>>>>> 50c2bae (added code and dockerfile)
+=======
+    "test": "mocha --recursive --exit",
+    "sonar": "sonar-scanner"
+>>>>>>> dev
   },
   "author": "riaan@entersekt.com",
   "description": "Basic to do list exercise",
